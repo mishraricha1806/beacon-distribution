@@ -31,8 +31,7 @@ Do not use:
 - Terraform state containing sensitive values
 - customer logs, customer telemetry, or private business data
 
-Beacon is designed to be read-only, but infrastructure metadata can still be
-sensitive. Treat your inputs carefully.
+Beacon is designed to be read-only . It will not store any data .
 
 ## Try The Local UI
 
