@@ -1,0 +1,28 @@
+name: Bug Report
+description: Report something that does not work as expected.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the issue without including secrets or sensitive data.
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command or UI path
+      description: Paste the command or describe the UI action.
+      render: bash
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+  - type: textarea
+    id: sanitized_input
+    attributes:
+      label: Sanitized input
+      description: Include only toy/sanitized config. Do not include credentials, private keys, tokens, Terraform state secrets, or customer data.
+

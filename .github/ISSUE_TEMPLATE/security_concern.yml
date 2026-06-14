@@ -1,0 +1,22 @@
+name: Security Concern
+description: Report unsafe behavior, unsafe wording, or a security concern.
+title: "[Security]: "
+labels: ["security"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include secrets, credentials, private keys, tokens, internal hostnames, or customer data in this public issue.
+  - type: textarea
+    id: concern
+    attributes:
+      label: Concern
+      description: What looks unsafe or confusing?
+    validations:
+      required: true
+  - type: textarea
+    id: safer_behavior
+    attributes:
+      label: Safer behavior
+      description: What should Beacon or the docs do instead?
+

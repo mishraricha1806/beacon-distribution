@@ -1,0 +1,23 @@
+name: Feedback
+description: Share feedback after trying Beacon with examples or sanitized inputs.
+title: "[Feedback]: "
+labels: ["feedback"]
+body:
+  - type: textarea
+    id: tried
+    attributes:
+      label: What did you try?
+      description: UI, CLI, bad-infra example, Black Friday example, or sanitized config.
+  - type: textarea
+    id: useful
+    attributes:
+      label: What was useful?
+  - type: textarea
+    id: confusing
+    attributes:
+      label: What was confusing?
+  - type: textarea
+    id: next
+    attributes:
+      label: What should Beacon support next?
+

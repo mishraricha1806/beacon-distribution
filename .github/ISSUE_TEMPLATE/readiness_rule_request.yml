@@ -1,0 +1,24 @@
+name: Readiness Rule Request
+description: Suggest a new production-readiness check.
+title: "[Rule]: "
+labels: ["readiness-rule", "enhancement"]
+body:
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Production-readiness scenario
+      description: What risk should Beacon detect?
+      placeholder: "Example: Kafka topic has RF=1 in prod and cannot survive broker failure."
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Input evidence
+      description: What config/runtime fields would prove the risk?
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Expected recommendation
+      description: What should Beacon tell the engineer to do first?
+
